@@ -14,33 +14,36 @@
 	 <div class="container">
 	 
       	<div class="navbar navbar-default">
-	      	<!-- header -->
-	      	<h1 class="text-center">Developer's Best Friend</h1>
-	  	    <div id="breadcrumbs">
-	  	      <ul class="nav navbar-nav breadcrumbs">
-	  	        <li>
-	  	          <a href="#">Test</a>
-	  	        </li>
-	  	      </ul>
-	  	    </div>
-	  	  </div>
+			<!-- header -->
+			<h1 class="text-center">Developer's Best Friend</h1>
+		</div>
 
       	<!-- main -->
 		<div id="container">
 		
 		<table style="width: 100%" class="table table-bordered">
 			<tr>
+				<td class="col-md-2"><h2>Lorem Ipsum Generator</h2>
+				<br/>
+				In publishing and graphic design, lorem ipsum is a placeholder text commonly used to demonstrate the graphic elements of a document or visual presentation. By replacing the distraction of meaningful content with filler text of scrambled Latin it allows viewers to focus on graphical elements such as font, typography, and layout. 
+				</td>
+				<td class="col-md-2"><h2>Random User Generator</h2>
+				<br/>
+				Create random user data for your applications. 
+				</td>
+			</tr>
+			<tr>
 				<td>		
 					{{ Form::open(array('url' => 'faketext')) }}
 						{{ Form::label('num-text', 'How Many Paragraphs?'); }}
-					    @yield('dropdown')
+					    {{ Form::select('num-text', array('1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9', '10' => '10'), Input::get('num-text', '3')); }}
 					    {{ Form::submit('Create Fake Text!!'); }}
 					{{ Form::close() }}
 				</td>
 				<td>
 					{{ Form::open(array('url' => 'generateuser')) }}
 						{{ Form::label('num-users', 'How Many users?'); }}
-					    {{ Form::select('num-users', array('1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9', '10' => '10'), '1'); }}
+					    {{ Form::select('num-users', array('1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9', '10' => '10'), Input::get('num-users', '1')); }}
 					    {{ Form::submit('Generate Users!'); }}
 					{{ Form::close() }}
 				</td>
