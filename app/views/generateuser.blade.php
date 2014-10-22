@@ -13,8 +13,10 @@
 				<br/>
 				Address:<br/>{{ $fakers->streetAddress; }}
 				<br/>{{ $fakers->city; }}, {{ $fakers->stateAbbr; }}  {{ $fakers->postcode; }}
-				<br/>
-				Phone:<br/>{{ $fakers->phoneNumber; }}
+				@if ($phone === '1')
+					<br/>
+					Phone:<br/>{{ $fakers->phoneNumber; }}
+				@endif
 				<br/>
 				Bio:<br/>{{ $fakers->text; }}
 			<p/>

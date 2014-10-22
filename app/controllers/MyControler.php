@@ -22,9 +22,10 @@ class myController extends BaseController {
 	
 	public function postGenerateuser()
 	{
+		$phone = Input::get('phone', '0');
 		$numUsers = Input::get('num-users', '1');
 		$fakers = Faker\Factory::create();
-		return View::make('generateuser', array('fakers' => $fakers, 'num-users' => $numUsers));
+		return View::make('generateuser', array('fakers' => $fakers, 'num-users' => $numUsers, 'phone' => $phone));
 	}
 
 }

@@ -33,17 +33,22 @@
 				</td>
 			</tr>
 			<tr>
-				<td>		
+				<td class="text-center">		
 					{{ Form::open(array('url' => 'faketext')) }}
 						{{ Form::label('num-text', 'How Many Paragraphs?'); }}
 					    {{ Form::select('num-text', array('1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9', '10' => '10'), Input::get('num-text', '3')); }}
+						<br/>
 					    {{ Form::submit('Create Fake Text!!'); }}
 					{{ Form::close() }}
 				</td>
-				<td>
+				<td class="text-center">
 					{{ Form::open(array('url' => 'generateuser')) }}
 						{{ Form::label('num-users', 'How Many users?'); }}
 					    {{ Form::select('num-users', array('1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9', '10' => '10'), Input::get('num-users', '1')); }}
+						{{ '&nbsp;&nbsp;&nbsp;' }}
+						{{ Form::label('phone', 'Include Phone Number?'); }}
+						{{ Form::checkbox('phone', '1' ,(Input::get('phone', '0') === '1')); }}
+						<br/>
 					    {{ Form::submit('Generate Users!'); }}
 					{{ Form::close() }}
 				</td>
