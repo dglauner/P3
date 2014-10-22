@@ -61,14 +61,6 @@
 	
 		</div>
       	
-      	<!-- footer 
-      	<div class="footer">
-      	 <div class="text-center">
-      		  Footer Text
-  		</div>
-  		</div>
-  	</div>-->
-<!-- Latest compiled and minified JavaScript -->
 {{ HTML::script('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'); }}
 	
 </body>
