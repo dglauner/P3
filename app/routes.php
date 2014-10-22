@@ -31,13 +31,17 @@ Route::get('/generateuser', function()
 
 Route::post('/faketext', function()
 {
-    $input =  Input::all();
-    print_r($input);
+	$numtext = Input::get('num-text', '3');
+	$generator = new Badcow\LoremIpsum\Generator();
+	$paragraphs = $generator->getParagraphs($numtext);
+	//return View::make('faketext')->with('text', $paragraphs);
+	return View::make('faketext', array('text' => $paragraphs, 'num-text' => $numtext));
+	
 });
 
 Route::post('/generateuser', function()
 {
-    $input =  Input::all();
+	$input =  Input::all();
     print_r($input);
 });
 

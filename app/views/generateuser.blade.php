@@ -1,9 +1,9 @@
 @extends('_master')
 
 @section('title')
-	Project 3
+	Generate user
 @stop
 
 @section('content')
-
+	Generate user
 @stop

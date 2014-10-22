@@ -27,16 +27,39 @@
 
       	<!-- main -->
 		<div id="container">
-			@yield('content','My Content')
+		
+		<table style="width: 100%" class="table table-bordered">
+			<tr>
+				<td>		
+					{{ Form::open(array('url' => 'faketext')) }}
+						{{ Form::label('num-text', 'How Many Paragraphs?'); }}
+					    @yield('dropdown')
+					    {{ Form::submit('Create Fake Text!!'); }}
+					{{ Form::close() }}
+				</td>
+				<td>
+					{{ Form::open(array('url' => 'generateuser')) }}
+						{{ Form::label('num-users', 'How Many users?'); }}
+					    {{ Form::select('num-users', array('1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9', '10' => '10'), '1'); }}
+					    {{ Form::submit('Generate Users!'); }}
+					{{ Form::close() }}
+				</td>
+			</tr>
+		</table>
+		
+		
+		@yield('content','My Content')
+
+	
 		</div>
       	
-      	<!-- footer -->
+      	<!-- footer 
       	<div class="footer">
       	 <div class="text-center">
       		  Footer Text
   		</div>
   		</div>
-  	</div>
+  	</div>-->
 <!-- Latest compiled and minified JavaScript -->
 {{ HTML::script('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'); }}
 	
