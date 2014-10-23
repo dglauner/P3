@@ -18,6 +18,12 @@
 					Phone:<br/>{{ $fakers->phoneNumber; }}
 				@endif
 				<br/>
+				@if ($email === '1')
+					<br/>
+					Phone:<br/>{{ $fakers->email; }}
+				@endif
+				<br/>
+				
 				Bio:<br/>{{ $fakers->text; }}
 			</p>
 			@endfor

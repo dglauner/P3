@@ -45,9 +45,12 @@
 					{{ Form::open(array('url' => 'generateuser')) }}
 						{{ Form::label('num-users', 'How Many users?'); }}
 					    {{ Form::select('num-users', array('1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9', '10' => '10'), Input::get('num-users', '1')); }}
-						{{ '&nbsp;&nbsp;&nbsp;' }}
+						<br/>
 						{{ Form::label('phone', 'Include Phone Number?'); }}
 						{{ Form::checkbox('phone', '1' ,(Input::get('phone', '0') === '1')); }}
+						<br/>
+						{{ Form::label('email', 'Include An Email Address?'); }}
+						{{ Form::checkbox('email', '1' ,(Input::get('phone', '0') === '1')); }}
 						<br/>
 					    {{ Form::submit('Generate Users!'); }}
 					{{ Form::close() }}
