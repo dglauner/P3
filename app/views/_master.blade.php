@@ -50,7 +50,7 @@
 						{{ Form::checkbox('phone', '1' ,(Input::get('phone', '0') === '1')); }}
 						<br/>
 						{{ Form::label('email', 'Include An Email Address?'); }}
-						{{ Form::checkbox('email', '1' ,(Input::get('phone', '0') === '1')); }}
+						{{ Form::checkbox('email', '1' ,(Input::get('email', '0') === '1')); }}
 						<br/>
 					    {{ Form::submit('Generate Users!'); }}
 					{{ Form::close() }}

@@ -13,17 +13,16 @@
 				<br/>
 				Address:<br/>{{ $fakers->streetAddress; }}
 				<br/>{{ $fakers->city; }}, {{ $fakers->stateAbbr; }}  {{ $fakers->postcode; }}
+
 				@if ($phone === '1')
 					<br/>
 					Phone:<br/>{{ $fakers->phoneNumber; }}
 				@endif
-				<br/>
 				@if ($email === '1')
 					<br/>
-					Phone:<br/>{{ $fakers->email; }}
+					Email:<br/>{{ $fakers->email; }}
 				@endif
 				<br/>
-				
 				Bio:<br/>{{ $fakers->text; }}
 			</p>
 			@endfor
