@@ -19,7 +19,7 @@
 				@endif
 				<br/>
 				Bio:<br/>{{ $fakers->text; }}
-			<p/>
+			</p>
 			@endfor
 		</div>
 	@endif
