@@ -6,3 +6,11 @@
     -moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
     box-shadow: 0 0 8px rgba(82,168,236,.6) !important;
 }
+
+.width50{
+	width:50%;
+}
+
+.floatRight{
+	float:right;
+}

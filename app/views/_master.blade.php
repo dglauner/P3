@@ -3,6 +3,8 @@
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache-control" content="no-store">
 {{ HTML::style('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'); }}
 {{ HTML::style('css/default.css'); }}
 
@@ -23,11 +25,11 @@
 		
 		<table style="width: 100%" class="table table-bordered">
 			<tr>
-				<td class="col-md-2"><h2>Lorem Ipsum Generator</h2>
+				<td class="width50"><h2>Lorem Ipsum Generator</h2>
 				<br/>
 				In publishing and graphic design, lorem ipsum is a placeholder text commonly used to demonstrate the graphic elements of a document or visual presentation. By replacing the distraction of meaningful content with filler text of scrambled Latin it allows viewers to focus on graphical elements such as font, typography, and layout. 
 				</td>
-				<td class="col-md-2"><h2>Random User Generator</h2>
+				<td class="width50"><h2>Random User Generator</h2>
 				<br/>
 				Create random user data for your applications. 
 				</td>
