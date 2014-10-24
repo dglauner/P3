@@ -5,6 +5,8 @@
 
 ## Description
 A web application called Developer's Best Friend which includes a Lorem Ipsum Generator and a Random User Generator.
+* Lorem Ipsum Generates 1 - 10 paragraphs of fake text.
+* Random User Generator generates fake user info including an image, name, address and options to add a phone number and an email address.
 
 ## Demo
 
